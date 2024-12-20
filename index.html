@@ -1,9 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="he">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>האתר שלי</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl; /* Right-to-left text direction */
+            text-align: right; /* Align text to the right */
+        }
+        header {
+            background-image: url('https://via.placeholder.com/1500x500'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+        section {
+            padding: 20px;
+        }
+        .about, .faq {
+            margin-bottom: 40px;
+        }
+        .faq dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .faq dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+
+    <!-- Header Section -->
+    <header>
+        <h1>ברוכים הבאים לאתר שלי</h1>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>על האתר</h2>
+        <p>זהו אתר פשוט שנוצר כדי להדגים את המבנה הבסיסי ביותר עם תמונת כותרת, מידע אודות ושאלות נפוצות. כאן תוכלו ללמוד עוד על האתר.</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>שאלות נפוצות</h2>
+        <dl>
+            <dt>מה האתר הזה מציג?</dt>
+            <dd>האתר הזה מציג מבנה בסיסי עם תוכן פשוט.</dd>
+
+            <dt>איך אני מתחיל?</dt>
+            <dd>פשוט חקור את התוכן והקטעים של הדף כדי ללמוד עוד.</dd>
+
+            <dt>מי יצר את האתר הזה?</dt>
+            <dd>האתר הזה נוצר כדוגמה פשוטה ב-HTML.</dd>
+        </dl>
+    </section>
+
 </body>
 </html>
