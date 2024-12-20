@@ -13,12 +13,12 @@
             direction: rtl; /* Right-to-left text direction */
             text-align: right; /* Align text to the right */
         }
-        header {
-            background-image: url('res/Bahad_1_Officers_training_academy.jpg'); /* Replace with your image URL */
+        
+        /* Banner Section */
+        #banner {
+            background-image: url('res/Bahad_1_Officers_training_academy.jpg');
             background-size: contain;
             background-position: center;
-            background-repeat: no-repeat; /* Prevents the image from repeating */
-
             height: 600px;
             color: white;
             text-align: center;
@@ -27,8 +27,15 @@
             align-items: center;
             font-size: 2em;
         }
-
-    
+        
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            #banner {
+                height: 400px; /* Adjust the height for smaller screens */
+                font-size: 1.5em; /* Smaller text size for smaller screens */
+            }
+        }
+        
         section {
             padding: 20px;
         }
@@ -70,20 +77,25 @@
         p {
             margin-bottom: 10px; /* Add space between paragraphs */
         }
-    </style>
+        
+        footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #888;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <!-- <h1 >בית הספר לקצינים של צה"ל</h1> -->
+    <!-- Header Section with Banner Image -->
+    <header id="banner">
+        <!-- Optional text in the banner (e.g. title or slogan) -->
     </header>
 
 
-    <!-- FAQ Section -->
+    <!-- About Section -->
     <section class="faq">
-
         <h2>אודות בה"ד 1</h2>
         
         <div class="text-wrapper">
@@ -103,12 +115,9 @@
             <p><strong>בינה מלאכותית משנה את תחום ההכשרות הצבאיות והאזרחיות.</strong></p>
             <p>היא מביאה שיפורים משמעותיים באימון, הדרכה והערכה. בעזרת אלגוריתמים חכמים, ניתן להתאים את תוכניות ההכשרה לצרכים האישיים של כל חייל או לומד.</p>
             <p>השפעתה ניכרת גם בניהול משאבים ובחיזוי הצלחה עתידית. הדרך הטובה ביותר לחזות את העתיד היא ליצור אותה, ונוכל לממש זאת באמצעות כלים המנצלים את הבינה המלאכתותית!.</p>
-            <p>כלים מבוססי בינה מלאכותית מנתחים ביצועים בזמן אמת, מזהים טעויות ומספקים משוב מיידי. כך משתפרת אפקטיביות ההכשרה ומתקצר זמן ההשלמה.</p>הדרך הטובה ביותר לחזות את העתיד היא ליצור אותה, ונוכל לממש זאת באמצעות כלים המנצלים את הבינה המלאכתותית!</p>
+            <p>כלים מבוססי בינה מלאכותית מנתחים ביצועים בזמן אמת, מזהים טעויות ומספקים משוב מיידי. כך משתפרת אפקטיביות ההכשרה ומתקצר זמן ההשלמה.</p>
             <p><strong>המשך יבוא</strong></p>
-
         </div>
-        
-
 
         <h2>שאלות נפוצות</h2>
         <div class="text-wrapper">
@@ -117,19 +126,16 @@
             <p><strong>שאלה:</strong> מה אעשה אם אכשל במשימה?</p>
             <p><strong>תשובה:</strong> אבצע את המשימה עשרות אם לא מאות פעמים עד שאצליח!</p>
         </div>
-        
-
-
 
     </section>
 
+    <!-- Footer Section -->
     <footer>
-        <p style="text-align: center; font-size: 18px; color: #888;">
+        <p>
             <strong>האתר אינו רשמי</strong><br>
             האתר לא מקושר לצה"ל או למערכת הצבאית באופן רשמי.
         </p>
     </footer>
-    
 
 </body>
 </html>
