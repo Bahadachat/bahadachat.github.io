@@ -13,16 +13,9 @@
             direction: rtl; /* Right-to-left text direction */
             text-align: right; /* Align text to the right */
         }
-        /* For smaller screens */
-        @media (max-width: 768px) {
-            body {
-                background-size: contain; /* Makes sure the image fits within the screen */
-                background-position: top center; /* Adjust position for smaller screens */
-            }
-        }
         header {
             background-image: url('res/Bahad_1_Officers_training_academy.jpg'); /* Replace with your image URL */
-            background-size: cover;
+            background-size: contain;
             background-position: center;
             height: 600px;
             color: white;
@@ -32,6 +25,8 @@
             align-items: center;
             font-size: 2em;
         }
+
+    
         section {
             padding: 20px;
         }
